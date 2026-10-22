@@ -1,0 +1,24 @@
+/* Homeの写真が2枚以上ある場合だけ適用します。 */
+.hero-slideshow .photo-frame {isolation:isolate}
+.hero-slideshow .home-slide {position:absolute;inset:0;opacity:0;transition:opacity var(--slide-fade,1000ms) ease;pointer-events:none}
+.hero-slideshow .home-slide.is-active {opacity:1}
+.slideshow-caption {display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:12px;min-height:52px}
+.slideshow-caption .photo-description {text-align:right}
+.slideshow-controls {display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:10px}
+.slideshow-dots {display:flex;flex-wrap:wrap;align-items:center;max-width:100%}
+.slideshow-dot {display:grid;place-items:center;width:30px;height:36px;border:0;padding:0;background:transparent;color:var(--accent)}
+.slideshow-dot span {width:6px;height:6px;border:1px solid currentColor;border-radius:50%}
+.slideshow-dot[aria-pressed=true] span {background:currentColor}
+.slideshow-dot:disabled {opacity:.35;cursor:default}
+.slideshow-toggle {display:inline-flex;justify-content:center;align-items:center;gap:6px;min-width:82px;min-height:36px;border:1px solid var(--line);background:white;color:var(--ink);padding:6px 9px;font-size:10px;white-space:nowrap}
+.slideshow-toggle-icon {font:12px/1 var(--sans)}
+.slideshow-toggle:disabled {color:var(--muted);cursor:default}
+.slideshow-status {position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:700px) {
+  .home-hero .photo-frame img {object-position:var(--photo-position-mobile,var(--photo-position,center))}
+  .slideshow-caption {grid-template-columns:auto minmax(0,1fr);gap:4px 10px}
+  .slideshow-controls {grid-column:1/-1;justify-content:flex-end}
+  .slideshow-dot {width:32px;height:38px}
+  .slideshow-toggle {min-height:38px}
+}
+@media(prefers-reduced-motion:reduce) {.hero-slideshow .home-slide {transition:none}}
