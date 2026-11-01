@@ -17,11 +17,12 @@
   function mount(){
     cleanup();
     const links=[...document.querySelectorAll('[data-research-zoom]')];
-    if(document.documentElement.lang!=='ja'||!links.length)return;
+    if(!links.length)return;
+    const t=(ja,en)=>document.documentElement.lang==='ja'?ja:en;
     const dialog=document.createElement('dialog');
     dialog.className='research-figure-dialog';
     dialog.setAttribute('aria-labelledby','research-figure-dialog-title');
-    dialog.innerHTML='<div class="figure-dialog-header"><h2 id="research-figure-dialog-title"></h2><button type="button" class="figure-dialog-close" aria-label="拡大表示を閉じる">閉じる ×</button></div><div class="figure-dialog-actions"><button type="button" class="figure-dialog-zoom" aria-pressed="false">原寸で表示</button><a class="figure-dialog-original" target="_blank" rel="noopener">画像を別タブで開く ↗</a></div><div class="figure-dialog-viewport" tabindex="0" aria-label="研究図。原寸表示では左右・上下にスクロールできます。"><img class="figure-dialog-image" alt=""></div>';
+    dialog.innerHTML=`<div class="figure-dialog-header"><h2 id="research-figure-dialog-title"></h2><button type="button" class="figure-dialog-close" aria-label="${t('拡大表示を閉じる','Close enlarged image')}">${t('閉じる ×','Close ×')}</button></div><div class="figure-dialog-actions"><button type="button" class="figure-dialog-zoom" aria-pressed="false">${t('原寸で表示','Actual size')}</button><a class="figure-dialog-original" target="_blank" rel="noopener">${t('画像を別タブで開く ↗','Open image in a new tab ↗')}</a></div><div class="figure-dialog-viewport" tabindex="0" aria-label="${t('研究図。原寸表示では左右・上下にスクロールできます。','Research image. Scroll horizontally and vertically at actual size.')}"><img class="figure-dialog-image" alt=""></div>`;
     document.body.append(dialog);
     const title=dialog.querySelector('h2'),image=dialog.querySelector('img');
     const viewport=dialog.querySelector('.figure-dialog-viewport');
@@ -30,11 +31,12 @@
     let opener=null,nativeWidthFromImage=false;
     const setNativeWidth=()=>{if(nativeWidthFromImage&&image.naturalWidth)image.style.setProperty('--figure-native-width',image.naturalWidth+'px')};
     image.addEventListener('load',setNativeWidth);
-    function resetZoom(){dialog.classList.remove('is-native-size');zoom.setAttribute('aria-pressed','false');zoom.textContent='原寸で表示';viewport.scrollTo(0,0)}
+    function resetZoom(){dialog.classList.remove('is-native-size');zoom.setAttribute('aria-pressed','false');zoom.textContent=t('原寸で表示','Actual size');viewport.scrollTo(0,0)}
     function onClose(){document.body.classList.remove('figure-viewer-open');if(opener?.isConnected)opener.focus({preventScroll:true});opener=null}
     function open(event){
       if(typeof dialog.showModal!=='function'||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
-      const f=figures.find(f=>f.id===event.currentTarget.dataset.researchZoom);
+      const overviewFigures=Object.values(window.LAB_DATA?.researchOverview||{}).map(v=>v.image);
+      const f=[...figures,...overviewFigures].find(f=>f.id===event.currentTarget.dataset.researchZoom);
       if(!f)return;
       event.preventDefault();opener=event.currentTarget;
       title.textContent=f.title;image.alt=f.title;
@@ -46,7 +48,7 @@
     }
     links.forEach(link=>link.addEventListener('click',open));
     close.addEventListener('click',()=>dialog.close());
-    zoom.addEventListener('click',()=>{const native=dialog.classList.toggle('is-native-size');zoom.setAttribute('aria-pressed',String(native));zoom.textContent=native?'全体幅に合わせる':'原寸で表示';viewport.scrollTo(0,0)});
+    zoom.addEventListener('click',()=>{const native=dialog.classList.toggle('is-native-size');zoom.setAttribute('aria-pressed',String(native));zoom.textContent=native?t('全体幅に合わせる','Fit to width'):t('原寸で表示','Actual size');viewport.scrollTo(0,0)});
     dialog.addEventListener('close',onClose);
     dialog.addEventListener('keydown',event=>{
       if(event.key!=='Tab')return;

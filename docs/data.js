@@ -111,5 +111,47 @@ const profile={
  service:[['2025年1月 – 現在','Jan. 2025 – Present','Earth, Planets and Space 編集委員','Editorial Board Member, Earth, Planets and Space'],['2019年度 – 現在','2019 – Present','日本地質学会 代議員','Delegate, Geological Society of Japan']],
  memberships:[{ja:'日本地質学会',en:'Geological Society of Japan'},{ja:'American Geophysical Union（AGU）',en:'American Geophysical Union (AGU)'}]
 };
-window.LAB_DATA={names,research,news,profile};
+const researchOverview={
+  "ja": {
+    "title": "沈み込みプレート境界層の物質科学的進化",
+    "paragraphs": [
+      "沈み込み帯は、地球表層を覆うプレートが別のプレートの下へと沈み込む場所であり、巨大地震やスロー地震が発生する場でもあります。沈み込み運動が始まり、長期間にわたって継続するためには、強固な海洋リソスフェアの一部に変形が集中し、周囲よりも力学的に弱いプレート境界が形成・維持される必要があります。このようなプレート境界の形成と進化には、流体の浸透や鉱物反応、それらに伴う岩石の変形が深く関わっていると考えられています。",
+      "私たちは、<strong>沈み込みはどのように始まり、プレート境界はどのように弱化し、成熟した沈み込み帯では地震性すべり・スロースリップ・粘性流動がどのような仕組みで生じるのか</strong>という問題に取り組んでいます。特に、流体と岩石の相互作用に注目し、鉱物の生成・成長、変形の局所化、間隙流体圧の変動が、プレート境界の力学的性質をどのように変えるのかを明らかにすることを目指しています。",
+      "研究の中心となるのは、天然の剪断帯を対象とする<strong>野外調査・微細構造解析</strong>と、地下深部の条件を再現する<strong>高圧変形・摩擦実験</strong>です。天然岩石に残された変形と反応の記録を読み解くとともに、実験によって岩石や鉱物の力学特性を定量的に調べます。さらに、これらの結果を物理モデルや数値計算と結びつけることで、沈み込みプレート境界層の形成から成熟に至る進化過程を統一的に理解することを目指しています。"
+    ],
+    "caption": "沈み込みプレート境界層の形成と進化を示す概念図。",
+    "abbreviations": "略号：SZ＝地震発生帯、ETS＝深部低周波微動とスロースリップの周期的発生。",
+    "transition": "以下では、これらの問題を4つの研究テーマに分けて紹介します。",
+    "image": {
+      "id": "overview-ja",
+      "file": "subduction-boundary-evolution-ja.jpg",
+      "width": 4023,
+      "height": 1357,
+      "title": "沈み込みプレート境界層の形成と進化",
+      "alt": "沈み込み開始から初期・成熟段階までのプレート境界の進化を示す3段階の概念図",
+      "noImageProcessing": true
+    }
+  },
+  "en": {
+    "title": "Material Evolution of Subduction Plate Boundaries",
+    "paragraphs": [
+      "Subduction zones are regions where one tectonic plate descends beneath another, and they are also sites of great earthquakes and slow earthquakes. For subduction to initiate and continue over geological timescales, deformation must become localized within the strong oceanic lithosphere, forming and maintaining a plate boundary that is mechanically weaker than the surrounding rocks. Fluid infiltration, mineral reactions, and associated rock deformation are thought to play important roles in the formation and evolution of such plate boundaries.",
+      "Our research addresses three fundamental questions: <strong>How does subduction initiate? How do newly formed plate boundaries weaken and remain mechanically weak? What controls seismic slip, slow slip, and viscous flow along mature subduction interfaces?</strong> We focus particularly on fluid–rock interactions, investigating how mineral reactions, strain localization, and variations in pore-fluid pressure govern the mechanical behavior of subduction plate boundaries.",
+      "Our approach combines <strong>field investigations and microstructural analyses of natural shear zones</strong> with <strong>high-pressure deformation and friction experiments</strong> that reproduce conditions relevant to the deep lithosphere. Natural rocks preserve records of deformation and fluid–rock reactions, while experiments allow us to quantify the mechanical properties and deformation mechanisms of minerals and rocks. By integrating these observations with physical models and numerical calculations, we aim to develop a comprehensive understanding of how subduction plate boundaries form and evolve."
+    ],
+    "caption": "Schematic model illustrating the formation and evolution of subduction plate boundaries.",
+    "abbreviations": "Abbreviations: SZ, seismogenic zone; ETS, episodic tremor and slip.",
+    "transition": "The following four research themes address different, interconnected aspects of these processes.",
+    "image": {
+      "id": "overview-en",
+      "file": "subduction-boundary-evolution-en.jpg",
+      "width": 4023,
+      "height": 1364,
+      "title": "Formation and evolution of subduction plate boundaries",
+      "alt": "Three-stage schematic of subduction initiation, early-stage subduction and mature subduction",
+      "noImageProcessing": true
+    }
+  }
+};
+window.LAB_DATA={names,research,news,profile,researchOverview};
 })();
