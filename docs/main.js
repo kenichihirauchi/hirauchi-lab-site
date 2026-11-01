@@ -95,8 +95,8 @@ function researchOverview(){
   if(!overview)return '';
   const figure=overview.image;
   const imageURL='assets/research/'+encodeURIComponent(figure.file);
-  return `<section class="site-container research-overview" aria-labelledby="research-overview-title" lang="${lang}">
-    <div class="research-paras research-overview-copy"><h2 id="research-overview-title">${esc(overview.title)}</h2>${overview.paragraphs.map(p=>`<p>${p}</p>`).join('')}</div>
+  return `<section class="site-container research-overview" aria-label="${t('研究概要','Research overview')}" lang="${lang}">
+    <div class="research-paras research-overview-copy">${overview.paragraphs.map(p=>`<p>${p}</p>`).join('')}</div>
     <figure class="research-figure research-overview-figure" data-figure="${figure.id}"><a class="research-figure-link" href="${imageURL}" target="_blank" rel="noopener" data-research-zoom="${figure.id}" aria-label="${esc(t('拡大表示：','Enlarge: ')+figure.title)}" title="${t('クリックして拡大表示','Click to enlarge')}"><img src="${imageURL}" width="${figure.width}" height="${figure.height}" loading="lazy" decoding="async" alt="${esc(figure.alt)}"></a><figcaption><p class="research-figure-description"><strong class="research-figure-number">${t('図','Figure ')+figure.number}</strong>${t('　','. ')}${esc(overview.caption)}</p><p class="research-figure-abbreviations">${esc(overview.abbreviations)}</p></figcaption></figure>
     <p class="research-overview-transition">${esc(overview.transition)}</p>
   </section>`;
