@@ -17,7 +17,7 @@ const research=[
 {no:'01',title:'Birth and Evolution of Subduction Plate Boundaries',jaTitle:'沈み込みプレート境界の誕生と進化',
  ja:[
  `沈み込み帯が生まれるためには、強い海洋プレート同士の境界に、変形を集中させる十分に弱い領域が必要です。私たちは、オフィオライトに保存された天然の初期沈み込み帯と高圧変形実験を組み合わせ、プレート境界がどのように形成され、その弱さがどのように維持されるのかを調べています。`,
- `かんらん岩を模擬した試料（かんらん石＋斜方輝石）を用いた高圧摩擦実験では、水の存在下で変形が進むと、斜方輝石の水和反応によって弱い含水鉱物である滑石が生成し、試料強度が約1桁低下することを示しました（図1）。この結果から、海洋リソスフェア内部の断層帯に海水が浸透し、変形と同時に水和反応が進行することが、沈み込み開始に必要な弱い剪断帯の形成に重要であると考えています（<a class="cite-link" href="https://doi.org/10.1038/ncomms12550" target="_blank" rel="noopener">Hirauchi et al., 2016</a>）。`,
+ `かんらん岩を模擬した試料（かんらん石＋斜方輝石）を用いた高圧摩擦実験では、水の存在下で変形が進むと、斜方輝石の水和反応によって弱い含水鉱物である滑石が生成し、試料強度が約1桁低下することを示しました（図2）。この結果から、海洋リソスフェア内部の断層帯に海水が浸透し、変形と同時に水和反応が進行することが、沈み込み開始に必要な弱い剪断帯の形成に重要であると考えています（<a class="cite-link" href="https://doi.org/10.1038/ncomms12550" target="_blank" rel="noopener">Hirauchi et al., 2016</a>）。`,
  `さらに現在、フィリピン西部の中央パラワン・オフィオライトにおいて、かつての海嶺が圧縮場に転じ、沈み込み帯へと発達した過程を記録する基底かんらん岩を研究しています。微細構造観察と主要・微量元素組成分析から、スラブ由来流体の浸透に伴うCa角閃石の析出と相混合がかんらん石の細粒化を促し、変形機構が転位クリープから粒径依存型流動（拡散クリープ）へ移行したことが分かりました。さらに冷却が進むと、滑石・緑泥石・アンチゴライトなどの弱い含水フィロケイ酸塩が網目状に発達し、圧力溶解と摩擦すべりを組み合わせた摩擦–粘性流動によって変形が局在化しました。これらの流体に駆動された二段階の弱化が、冷却によるプレート境界の強化を抑え、沈み込みを持続させたと考えています（Hirauchi et al., in revision）。`,
  `こうした研究から、若い沈み込み帯がどのように自立的なプレート境界へ成長するのかを明らかにすることを目指しています。`
  ],
@@ -30,8 +30,8 @@ const research=[
 {no:'02',title:'Fluid–Rock Reactions and Rheological Weakening',jaTitle:'流体–岩石反応とレオロジー弱化',
  ja:[
  `沈み込み帯では、スラブから放出された流体が周囲の岩石と反応し、新たな鉱物を形成します。こうした流体–岩石反応は鉱物組成を変化させるだけでなく、岩石の強度やすべり特性を大きく変え、変形を狭い剪断帯へ集中させる可能性があります。私たちは、天然の反応帯の野外・微細構造観察と変形実験を組み合わせ、化学反応によって新たに生成した鉱物がプレート境界の力学特性をどのように変えるのかを研究しています。`,
- `アンチゴライト蛇紋岩と石英の混合試料を用いた熱水摩擦実験では、300–500 °Cで交代作用が進行すると滑石が生成し、変形の進行とともに滑石に富む剪断帯が発達して大きな歪弱化が生じることを示しました。滑石の生成量が少量であっても、それが連結した剪断帯を形成すると、岩石全体の強度が滑石の低い摩擦強度に近づきます（図2）。この結果は、反応生成物の量だけでなく、その空間的なつながり方が剪断帯の強度を支配することを示しています（<a class="cite-link" href="https://doi.org/10.1130/G33552.1" target="_blank" rel="noopener">Hirauchi et al., 2013</a>）。`,
- `一方、米国カリフォルニア州のFranciscan Complexに露出する蛇紋岩と泥質岩の境界では、交代作用によって蛇紋岩側に滑石片岩、泥質岩側にトレモラ閃石片岩が形成され、天然の延性剪断帯を構成しています（図3）。これらの岩石を用いた熱水摩擦実験から、特に滑石片岩は非常に低い摩擦係数をもち、実験したすべての条件で速度強化を示すことが分かりました。これらの結果は、交代作用による滑石の生成がプレート境界の強度を低下させるとともに、安定したすべりを促進する可能性を示しています（<a class="cite-link" href="https://doi.org/10.1016/j.epsl.2019.115967" target="_blank" rel="noopener">Hirauchi et al., 2020</a>）。`,
+ `アンチゴライト蛇紋岩と石英の混合試料を用いた熱水摩擦実験では、300–500 °Cで交代作用が進行すると滑石が生成し、変形の進行とともに滑石に富む剪断帯が発達して大きな歪弱化が生じることを示しました。滑石の生成量が少量であっても、それが連結した剪断帯を形成すると、岩石全体の強度が滑石の低い摩擦強度に近づきます（図3）。この結果は、反応生成物の量だけでなく、その空間的なつながり方が剪断帯の強度を支配することを示しています（<a class="cite-link" href="https://doi.org/10.1130/G33552.1" target="_blank" rel="noopener">Hirauchi et al., 2013</a>）。`,
+ `一方、米国カリフォルニア州のFranciscan Complexに露出する蛇紋岩と泥質岩の境界では、交代作用によって蛇紋岩側に滑石片岩、泥質岩側にトレモラ閃石片岩が形成され、天然の延性剪断帯を構成しています（図4）。これらの岩石を用いた熱水摩擦実験から、特に滑石片岩は非常に低い摩擦係数をもち、実験したすべての条件で速度強化を示すことが分かりました。これらの結果は、交代作用による滑石の生成がプレート境界の強度を低下させるとともに、安定したすべりを促進する可能性を示しています（<a class="cite-link" href="https://doi.org/10.1016/j.epsl.2019.115967" target="_blank" rel="noopener">Hirauchi et al., 2020</a>）。`,
  `このように私たちは、流体–岩石反応を単なる鉱物組成の変化ではなく、プレート境界の強度、変形の局在化、そして地震性・非地震性すべりの様式そのものを変化させる過程として捉えています。`
  ],
  en:[
@@ -42,10 +42,10 @@ const research=[
  ]},
 {no:'03',title:'Slow Earthquakes in Fluid-Overpressured Shear Zones',jaTitle:'高間隙流体圧剪断帯におけるスロー地震',
  ja:[
- `深部低周波微動やスロースリップなどのスロー地震は、通常の地震とは異なる時間スケールですべりが進行する現象で、暖かい沈み込み帯では巨大地震発生域の深部側で繰り返し発生します（図4A）。私たちは、極めて高い間隙流体圧のもとで岩石がどのように破壊し、その後どのように封鎖・変形して次の破壊に至るのかという物質科学的な観点から、スロー地震の発生機構を研究しています。`,
- `四国の三波川帯に露出する前弧マントルウェッジ起源のアンチゴライト蛇紋岩剪断帯では、静岩圧を超える高い間隙流体圧のもとで、伸張破壊と伸張–剪断破壊が繰り返され、多数の割れ目からなるfault–fracture mesh構造が形成されていたことを明らかにしました（図5）。破壊による流体圧の低下後にはアンチゴライトが割れ目を封鎖し、間隙流体圧が再び上昇して次の破壊に至るというサイクルが推定されます。また、流体圧が相対的に低下した時期には、アンチゴライトが結晶塑性変形して加速した粘性流動を担った可能性があります。これらの破壊と粘性変形の繰り返しが、深部低周波微動とスロースリップにそれぞれ対応していたと考えています（図4B, C; <a class="cite-link" href="https://doi.org/10.1016/j.epsl.2021.117232" target="_blank" rel="noopener">Hirauchi et al., 2021</a>）。`,
+ `深部低周波微動やスロースリップなどのスロー地震は、通常の地震とは異なる時間スケールですべりが進行する現象で、暖かい沈み込み帯では巨大地震発生域の深部側で繰り返し発生します（図5A）。私たちは、極めて高い間隙流体圧のもとで岩石がどのように破壊し、その後どのように封鎖・変形して次の破壊に至るのかという物質科学的な観点から、スロー地震の発生機構を研究しています。`,
+ `四国の三波川帯に露出する前弧マントルウェッジ起源のアンチゴライト蛇紋岩剪断帯では、静岩圧を超える高い間隙流体圧のもとで、伸張破壊と伸張–剪断破壊が繰り返され、多数の割れ目からなるfault–fracture mesh構造が形成されていたことを明らかにしました（図6）。破壊による流体圧の低下後にはアンチゴライトが割れ目を封鎖し、間隙流体圧が再び上昇して次の破壊に至るというサイクルが推定されます。また、流体圧が相対的に低下した時期には、アンチゴライトが結晶塑性変形して加速した粘性流動を担った可能性があります。これらの破壊と粘性変形の繰り返しが、深部低周波微動とスロースリップにそれぞれ対応していたと考えています（図5B, C; <a class="cite-link" href="https://doi.org/10.1016/j.epsl.2021.117232" target="_blank" rel="noopener">Hirauchi et al., 2021</a>）。`,
  `さらに、アンチゴライト蛇紋岩の高圧変形実験では、間隙流体圧が高くなるにつれて岩石強度が低下し、少数の長大な断層面に集中した摩擦すべりから、試料全体にfault–fracture meshが形成される変形へ移行することを確認しました。この結果から、流体過圧状態の厚い蛇紋岩剪断帯内部で多数の脆性破壊が同時発生することによって深部低周波微動が生じ、その後の熱水鉱物による割れ目の封鎖が微動の再来間隔を制御するモデルを提案しています（<a class="cite-link" href="https://doi.org/10.1038/s43247-025-02159-7" target="_blank" rel="noopener">Hirauchi et al., 2025</a>）。`,
- `最近では、関東山地の三波川帯に露出する樋口蛇紋岩体を対象に、CO₂に富む流体の浸透に伴う炭酸塩化作用と剪断帯の変形過程を調べています。高間隙流体圧下での破壊後には、クリソタイル、滑石、炭酸塩鉱物が割れ目を封鎖し、これらの鉱物が溶解–沈殿クリープによる粘性変形を担っていたことが分かりました。その後、CO₂とCaに富む高流量の外来流体が浸透し、大規模なドロマイト脈が形成されました（図6）。ドロマイトに富む剪断脈と引張脈が相互に切り合う産状と古応力解析から、これらの脈の形成過程では、最大主応力軸（σ₁）と最小主応力軸（σ₃）が入れ替わるような応力場の変動が生じていたと考えられます。これらの結果は、流体の供給量や組成が破壊様式、鉱物沈殿、剪断帯のレオロジーを大きく変化させるとともに、応力場の変動を伴う脈形成の履歴を記録していることを示しています（<a class="cite-link" href="https://doi.org/10.1029/2025JB033329" target="_blank" rel="noopener">Hirauchi et al., 2026</a>）。`,
+ `最近では、関東山地の三波川帯に露出する樋口蛇紋岩体を対象に、CO₂に富む流体の浸透に伴う炭酸塩化作用と剪断帯の変形過程を調べています。高間隙流体圧下での破壊後には、クリソタイル、滑石、炭酸塩鉱物が割れ目を封鎖し、これらの鉱物が溶解–沈殿クリープによる粘性変形を担っていたことが分かりました。その後、CO₂とCaに富む高流量の外来流体が浸透し、大規模なドロマイト脈が形成されました（図7）。ドロマイトに富む剪断脈と引張脈が相互に切り合う産状と古応力解析から、これらの脈の形成過程では、最大主応力軸（σ₁）と最小主応力軸（σ₃）が入れ替わるような応力場の変動が生じていたと考えられます。これらの結果は、流体の供給量や組成が破壊様式、鉱物沈殿、剪断帯のレオロジーを大きく変化させるとともに、応力場の変動を伴う脈形成の履歴を記録していることを示しています（<a class="cite-link" href="https://doi.org/10.1029/2025JB033329" target="_blank" rel="noopener">Hirauchi et al., 2026</a>）。`,
  `これらの研究を通して、間隙流体圧の変動、脆性破壊、鉱物沈殿、粘性変形が結びついた一連のサイクルが、深部低周波微動やスロースリップをどのように生み出すのかを明らかにすることを目指しています。`
  ],
  en:[
@@ -111,5 +111,49 @@ const profile={
  service:[['2025年1月 – 現在','Jan. 2025 – Present','Earth, Planets and Space 編集委員','Editorial Board Member, Earth, Planets and Space'],['2019年度 – 現在','2019 – Present','日本地質学会 代議員','Delegate, Geological Society of Japan']],
  memberships:[{ja:'日本地質学会',en:'Geological Society of Japan'},{ja:'American Geophysical Union（AGU）',en:'American Geophysical Union (AGU)'}]
 };
-window.LAB_DATA={names,research,news,profile};
+const researchOverview={
+  "ja": {
+    "title": "沈み込みプレート境界層の物質科学的進化",
+    "paragraphs": [
+      "沈み込み帯は、地球表層を覆うプレートが別のプレートの下へと沈み込む場所であり、巨大地震やスロー地震が発生する場でもあります。沈み込み運動が始まり、長期間にわたって継続するためには、強固な海洋リソスフェアの一部に変形が集中し、周囲よりも力学的に弱いプレート境界が形成・維持される必要があります。このようなプレート境界の形成と進化には、流体の浸透や鉱物反応、それらに伴う岩石の変形が深く関わっていると考えられています。",
+      "私たちは、沈み込みはどのように始まり、プレート境界はどのように弱化し、成熟した沈み込み帯では地震性すべり・スロースリップ・粘性流動がどのような仕組みで生じるのかという問題に取り組んでいます。特に、流体と岩石の相互作用に注目し、鉱物の生成・成長、変形の局所化、間隙流体圧の変動が、プレート境界の力学的性質をどのように変えるのかを明らかにすることを目指しています。",
+      "研究の中心となるのは、天然の剪断帯を対象とする野外調査・微細構造解析と、地下深部の条件を再現する高圧変形・摩擦実験です。天然岩石に残された変形と反応の記録を読み解くとともに、実験によって岩石や鉱物の力学特性を定量的に調べます。さらに、これらの結果を物理モデルや数値計算と結びつけることで、沈み込みプレート境界層の形成から成熟に至る進化過程を統一的に理解することを目指しています。"
+    ],
+    "caption": "沈み込みプレート境界層の形成と進化を示す概念図。",
+    "abbreviations": "略号：SZ＝地震発生帯、ETS＝深部低周波微動とスロースリップの周期的発生。",
+    "transition": "以下では、これらの問題を4つの研究テーマに分けて紹介します。",
+    "image": {
+      "id": "overview-ja",
+      "file": "subduction-boundary-evolution-ja.jpg",
+      "width": 4023,
+      "height": 1357,
+      "title": "沈み込みプレート境界層の形成と進化",
+      "alt": "沈み込み開始から初期・成熟段階までのプレート境界の進化を示す3段階の概念図",
+      "noImageProcessing": true,
+      "number": 1
+    }
+  },
+  "en": {
+    "title": "Material Evolution of Subduction Plate Boundaries",
+    "paragraphs": [
+      "Subduction zones are regions where one tectonic plate descends beneath another, and they are also sites of great earthquakes and slow earthquakes. For subduction to initiate and continue over geological timescales, deformation must become localized within the strong oceanic lithosphere, forming and maintaining a plate boundary that is mechanically weaker than the surrounding rocks. Fluid infiltration, mineral reactions, and associated rock deformation are thought to play important roles in the formation and evolution of such plate boundaries.",
+      "Our research addresses three fundamental questions: How does subduction initiate? How do newly formed plate boundaries weaken and remain mechanically weak? What controls seismic slip, slow slip, and viscous flow along mature subduction interfaces? We focus particularly on fluid–rock interactions, investigating how mineral reactions, strain localization, and variations in pore-fluid pressure govern the mechanical behavior of subduction plate boundaries.",
+      "Our approach combines field investigations and microstructural analyses of natural shear zones with high-pressure deformation and friction experiments that reproduce conditions relevant to the deep lithosphere. Natural rocks preserve records of deformation and fluid–rock reactions, while experiments allow us to quantify the mechanical properties and deformation mechanisms of minerals and rocks. By integrating these observations with physical models and numerical calculations, we aim to develop a comprehensive understanding of how subduction plate boundaries form and evolve."
+    ],
+    "caption": "Schematic model illustrating the formation and evolution of subduction plate boundaries.",
+    "abbreviations": "Abbreviations: SZ, seismogenic zone; ETS, episodic tremor and slip.",
+    "transition": "The following four research themes address different, interconnected aspects of these processes.",
+    "image": {
+      "id": "overview-en",
+      "file": "subduction-boundary-evolution-en.jpg",
+      "width": 4023,
+      "height": 1364,
+      "title": "Formation and evolution of subduction plate boundaries",
+      "alt": "Three-stage schematic of subduction initiation, early-stage subduction and mature subduction",
+      "noImageProcessing": true,
+      "number": 1
+    }
+  }
+};
+window.LAB_DATA={names,research,news,profile,researchOverview};
 })();

@@ -6,13 +6,20 @@
 [data-page="research"] .research-content {min-width:0}
 [data-page="research"] .research-paras {max-width:850px}
 
-/* 図1・2は前回表示幅の95%、図3は105%。図5は従来幅を維持。
+/* Researchの導入文と図1の概念図。既存テーマ・研究図の幅は維持。 */
+.research-overview {margin-bottom:32px}
+.research-overview-copy {margin-inline:auto;margin-bottom:32px}
+/* 図1のみ表示幅を80%に縮小し、中央に配置。画像データは変更しません。 */
+.research-overview-figure {width:80%;margin-inline:auto;--figure-width:100%;min-width:0}
+.research-overview-transition {max-width:850px;margin:32px auto 0;font-size:15px;line-height:2.05;color:#3b4940}
+
+/* 図2・3は前回表示幅の95%、図4は105%。図6は従来幅を維持。
    狭い画面でも縮小率を保ち、画像の縦横比を維持します。 */
 .research-figure[data-figure="2016"] {--figure-width:769.5px;--figure-max-width:85.5%}
 .research-figure[data-figure="2013"] {--figure-width:769.5px;--figure-max-width:85.5%}
 .research-figure[data-figure="2020-epsl"] {--figure-width:432.18px}
-/* 図4は横並びの3パネルを読みやすくするため、本文欄の幅内に拡大。 */
-.research-figure[data-figure="2025-part1"] {--figure-width:892.5px}
+/* 図5の指定幅を110%に拡大し、表示幅は本文欄内に収めます。 */
+.research-figure[data-figure="2025-part1"] {--figure-width:981.75px}
 .research-figure[data-figure="fault-fracture-mesh"] {--figure-width:476px;--figure-max-width:85%}
 .research-figure[data-figure="2026"] {--figure-width:940px}
 .research-figures {margin-top:28px;margin-bottom:38px}
@@ -46,6 +53,8 @@ body.figure-viewer-open {overflow:hidden}
   [data-page="research"] .research-entry {grid-template-columns:40px minmax(0,1fr);gap:24px}
 }
 @media(max-width:700px) {
+  .research-overview-copy {margin-bottom:24px}
+  .research-overview-transition {font-size:14px;margin-top:24px}
   [data-page="research"] .research-entry {grid-template-columns:minmax(0,1fr);gap:18px}
   [data-page="research"] .research-num {font-size:30px}
   .research-figures {margin-top:24px;margin-bottom:30px}

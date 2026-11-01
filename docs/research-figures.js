@@ -2,7 +2,7 @@
 window.LAB_RESEARCH_FIGURES = [
   {
     "id": "2016",
-    "number": 1,
+    "number": 2,
     "theme": 1,
     "afterParagraph": 2,
     "file": "Hirauchi etal_2016.jpg",
@@ -18,7 +18,7 @@ window.LAB_RESEARCH_FIGURES = [
   },
   {
     "id": "2013",
-    "number": 2,
+    "number": 3,
     "theme": 2,
     "afterParagraph": 2,
     "file": "Hirauchi-2013-GSA-permitted.jpg",
@@ -33,7 +33,7 @@ window.LAB_RESEARCH_FIGURES = [
   },
   {
     "id": "2020-epsl",
-    "number": 3,
+    "number": 4,
     "theme": 2,
     "afterParagraph": 3,
     "file": "IMG_1578_3_8RE4.jpg",
@@ -49,7 +49,7 @@ window.LAB_RESEARCH_FIGURES = [
   },
   {
     "id": "2025-part1",
-    "number": 4,
+    "number": 5,
     "theme": 3,
     "afterParagraph": 1,
     "file": "Hirauchi etal_2025.jpg",
@@ -65,7 +65,7 @@ window.LAB_RESEARCH_FIGURES = [
   },
   {
     "id": "fault-fracture-mesh",
-    "number": 5,
+    "number": 6,
     "theme": 3,
     "afterParagraph": 2,
     "file": "fault-fracture mesh構造5.jpg",
@@ -80,7 +80,7 @@ window.LAB_RESEARCH_FIGURES = [
   },
   {
     "id": "2026",
-    "number": 6,
+    "number": 7,
     "theme": 3,
     "afterParagraph": 4,
     "file": "Hirauchi etal_2026.jpg",
