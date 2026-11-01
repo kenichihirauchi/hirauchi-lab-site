@@ -11,8 +11,8 @@
 .research-figure[data-figure="2016"] {--figure-width:769.5px;--figure-max-width:85.5%}
 .research-figure[data-figure="2013"] {--figure-width:769.5px;--figure-max-width:85.5%}
 .research-figure[data-figure="2020-epsl"] {--figure-width:432.18px}
-/* 図4は横並びの3パネルを読みやすくするため、本文欄の幅内に拡大。 */
-.research-figure[data-figure="2025-part1"] {--figure-width:892.5px}
+/* 図4の指定幅を110%に拡大し、表示幅は本文欄内に収めます。 */
+.research-figure[data-figure="2025-part1"] {--figure-width:981.75px}
 .research-figure[data-figure="fault-fracture-mesh"] {--figure-width:476px;--figure-max-width:85%}
 .research-figure[data-figure="2026"] {--figure-width:940px}
 .research-figures {margin-top:28px;margin-bottom:38px}
