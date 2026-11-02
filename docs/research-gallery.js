@@ -3,7 +3,7 @@
   'use strict';
   const figures=window.LAB_RESEARCH_FIGURES;
   const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const imageURL=f=>'assets/research/'+encodeURIComponent(f.file);
+  const imageURL=f=>'assets/research/'+encodeURIComponent(f.file)+(f.version?'?v='+encodeURIComponent(f.version):'');
   const sourceText=f=>f.sourceJournal?esc(f.source).replace(esc(f.sourceJournal),'<i>'+esc(f.sourceJournal)+'</i>'):esc(f.source);
   let cleanup=()=>{};
 
