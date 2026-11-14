@@ -8,6 +8,10 @@ if(lang!=='ja')lang='en';
 const esc=s=>String(s??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
 const t=(ja,en)=>lang==='ja'?ja:en;
 const pUrl=(p,hash='')=>(p==='home'?'index':p)+'.html?lang='+lang+hash;
+const languageUrl=language=>{
+  const params=new URLSearchParams(location.search);params.set('lang',language);
+  return (page==='home'?'index':page)+'.html?'+params+location.hash;
+};
 const menu=['Home','Research','Members','Publications','News','Contact'];
 const dateString=s=>{const[y,m,d]=s.split('-');return t(`${y}.${m}.${d}`,new Date(`${s}T12:00:00`).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}))};
 function nav(){
@@ -24,9 +28,9 @@ function nav(){
         ${menu.map(x=>`<a class="nav-link ${active===x.toLowerCase()?'active':''}" ${page===x.toLowerCase()?'aria-current="page"':''} href="${pUrl(x.toLowerCase())}">${t(japaneseMenu[x],x)}</a>`).join('')}
       </nav>
       <div class="language-switch" role="group" aria-label="${t('言語切り替え','Language selection')}">
-        <button type="button" class="language-button" data-lang="en" lang="en" aria-pressed="${lang==='en'}">EN</button>
+        <a class="language-button" href="${esc(languageUrl('en'))}" data-lang="en" lang="en" hreflang="en" ${lang==='en'?'aria-current="page"':''}>EN</a>
         <span aria-hidden="true">/</span>
-        <button type="button" class="language-button" data-lang="ja" lang="ja" aria-pressed="${lang==='ja'}">日本語</button>
+        <a class="language-button" href="${esc(languageUrl('ja'))}" data-lang="ja" lang="ja" hreflang="ja" ${lang==='ja'?'aria-current="page"':''}>日本語</a>
       </div>
       <button class="menu-toggle" id="menu-toggle" type="button" aria-label="${t('メニューを開く','Open menu')}" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     </div>
@@ -133,11 +137,24 @@ function render(){
   if(page==='research')window.LAB_RESEARCH_GALLERY?.destroy();
   document.documentElement.lang=lang;
   document.body.classList.toggle('lang-ja',lang==='ja');
-  document.title=`${page==='home'?'Hirauchi Laboratory':page.charAt(0).toUpperCase()+page.slice(1)+' | Hirauchi Laboratory'} — Shizuoka University`;
+  const metadata=window.LAB_PAGE_METADATA?.[page]?.[lang];
+  if(metadata){
+    document.title=metadata.title;
+    let description=document.querySelector('meta[name="description"]');
+    if(!description){
+      description=document.createElement('meta');description.name='description';
+      document.head.append(description);
+    }
+    description.content=metadata.description;
+  }
   document.querySelector('#app').innerHTML=nav()+(renderMap[page]||home)()+footer();
-  document.querySelectorAll('.language-button').forEach(button=>button.addEventListener('click',()=>{
-    if(lang===button.dataset.lang)return;
-    lang=button.dataset.lang;
+  document.querySelectorAll('.language-button').forEach(link=>link.addEventListener('click',event=>{
+    // Keep native new-tab/window and modified-click behavior. Keyboard Enter is
+    // an ordinary click, so it retains the existing in-page language switch.
+    if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    event.preventDefault();
+    if(lang===link.dataset.lang)return;
+    lang=link.dataset.lang;
     try{localStorage.setItem('hirauchi-language',lang)}catch{}
     const url=new URL(location.href);url.searchParams.set('lang',lang);
     try{history.replaceState({},'',url.href)}catch{/* Local file privacy settings may limit history access. */}

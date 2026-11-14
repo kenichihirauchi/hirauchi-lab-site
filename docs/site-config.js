@@ -109,3 +109,76 @@ window.LAB_SITE = {
     }
   }
 };
+
+window.LAB_PAGE_METADATA = {
+  "home": {
+    "ja": {
+      "title": "平内研究室・平内健一 | 静岡大学",
+      "description": "静岡大学理学部地球科学科の平内研究室（平内健一教授）の公式サイトです。構造地質学・岩石レオロジーを専門に、野外調査と高圧実験から沈み込みプレート境界、流体–岩石反応、スロー地震を研究しています。"
+    },
+    "en": {
+      "title": "Hirauchi Laboratory | Ken-ichi Hirauchi | Shizuoka University",
+      "description": "Hirauchi Laboratory, led by Ken-ichi Hirauchi at Shizuoka University, studies structural geology, rock rheology, fluid–rock reactions, and subduction plate boundaries."
+    }
+  },
+  "research": {
+    "ja": {
+      "title": "研究内容 | 静岡大学 平内研究室",
+      "description": "静岡大学・平内研究室の研究内容。沈み込みの開始と進化、流体–岩石反応、スロー地震、含水鉱物の変形を、野外調査と高圧変形実験から探ります。"
+    },
+    "en": {
+      "title": "Research | Hirauchi Laboratory — Shizuoka University",
+      "description": "Explore Hirauchi Laboratory's research on subduction initiation, fluid–rock reactions, slow earthquakes, and hydrous mineral deformation through fieldwork and high-pressure experiments."
+    }
+  },
+  "members": {
+    "ja": {
+      "title": "メンバー | 静岡大学 平内研究室",
+      "description": "静岡大学理学部地球科学科・平内研究室のメンバー紹介。平内健一教授と大学院生・学部生、それぞれの研究テーマを掲載しています。"
+    },
+    "en": {
+      "title": "Members | Hirauchi Laboratory — Shizuoka University",
+      "description": "Meet Ken-ichi Hirauchi and the graduate and undergraduate students of Hirauchi Laboratory, Shizuoka University, and explore their research interests."
+    }
+  },
+  "profile": {
+    "ja": {
+      "title": "平内健一（Ken-ichi Hirauchi）| 静岡大学 平内研究室",
+      "description": "平内健一（Ken-ichi Hirauchi）のプロフィール。静岡大学理学部地球科学科教授。学歴、職歴、受賞歴、研究費、学会活動を紹介します。"
+    },
+    "en": {
+      "title": "Ken-ichi Hirauchi | Hirauchi Laboratory, Shizuoka University",
+      "description": "Academic profile of Ken-ichi Hirauchi, Professor of Geosciences at Shizuoka University, including education, appointments, awards, research grants, and professional service."
+    }
+  },
+  "publications": {
+    "ja": {
+      "title": "論文・出版物 | 静岡大学 平内研究室",
+      "description": "平内研究室・平内健一の論文・出版物一覧。構造地質学、岩石レオロジー、沈み込み帯に関する研究成果を、書誌情報とDOIリンクとともに掲載しています。"
+    },
+    "en": {
+      "title": "Publications | Hirauchi Laboratory — Shizuoka University",
+      "description": "Publications by Ken-ichi Hirauchi and collaborators, including research on structural geology, rock rheology, and subduction zones, with journal details and DOI links."
+    }
+  },
+  "news": {
+    "ja": {
+      "title": "お知らせ | 静岡大学 平内研究室",
+      "description": "静岡大学・平内研究室のお知らせ。論文掲載、学会発表、研究費の採択など、研究室の活動を紹介します。"
+    },
+    "en": {
+      "title": "News | Hirauchi Laboratory — Shizuoka University",
+      "description": "News from Hirauchi Laboratory, Shizuoka University: journal publications, conference presentations, research grants, and laboratory activities."
+    }
+  },
+  "contact": {
+    "ja": {
+      "title": "連絡先 | 静岡大学 平内研究室",
+      "description": "静岡大学理学部地球科学科・平内研究室の連絡先。所在地、電話・FAX、メールアドレス、静岡キャンパスへのアクセス案内を掲載しています。"
+    },
+    "en": {
+      "title": "Contact | Hirauchi Laboratory — Shizuoka University",
+      "description": "Contact Hirauchi Laboratory, Department of Geosciences, Shizuoka University. Find our address, phone and fax numbers, email, and campus access information."
+    }
+  }
+};
